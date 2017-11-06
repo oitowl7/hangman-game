@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Executioner</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="assets/javascript/game.js"></script>
+	
+
+
+
+</head>
+
+<body onload="displaywins()"; onload="displaylosses()">
+<!-- <img class="source-image" src="assets/images/background-image.png" > -->
+<audio id= "audio1" controls=controls loop">
+    <source src="assets/audio/background-music.mp3"  type="audio/mp3" re>
+</audio>
+<div class="container">
+	<!-- header logo -->
+	<div class="container">
+	<img src="assets/images/header-logo.png" alt="GOT Logo" class="col-12 ">
+	</div>	
+	<!-- Title header -->
+	<div class="jrs-header navbar navbar-toggleable">
+		<div class="float-left col-6 grey-text">
+			<h3>Ned Stark needs you. Will you save him?</h3>
+		</div>
+		
+		<div class="float-right col-6 text-right grey-text">
+			<h3>Game of Thrones "Cut-Ned's-Head-Off"-Man</h3>
+		</div>
+	</div>
+	<div class="pg-break">
+	<br><br><br>
+	</div>
+	<!-- Instructions for playing the game -->
+	<div class="instructions row">
+		<p class="col-5 grey-text lh-200">
+			If you don't know how to play Cut-Head-Off-Man, it's quite simple. The purpose of the game is to not have Ned's head fall off. In order to do this, you have to guess the word that is being offered. If you do, congradulations! You just saved Ned. If not...well.......basically it's your fault his head fell off. Hope you can live with yourself. 
+			<br><br>
+			For greatest enjoyment/guilt, play with the music in the background. 
+		</p>
+		<div class="col-1">
+		</div>
+		<p class="col-5 grey-text lh-200 text-right">
+			In order to start the game, press the start button. The number of Neds that you have saved will be tracked. More importantly, the number of Neds that you have killed will also be tracked. You should try to keep this number at 0 because we all know that there is only one true Ned. May God have mercy on your soul.
+		</p>
+	</div>
+	<div class="pg-break">
+	<br><br><br>
+	</div>
+	<!-- win/loss record and reset-->
+	<div class="winloss row">
+		<div class="col-1">
+		</div>
+		<div class="col-3">
+			<div class="wins grey-text text-center">
+				Number of times Ned hasn't died
+			</div>
+			<div class="wins-counter">		
+				<h3><p id="wins" class="grey-text text-center"></p></h3>
+			</div>
+			<div class="losses grey-text text-center">
+				Number of times Ned has died and it was all your fault
+			</div>
+			<div class="losses-counter">
+				<h3><p id="loss" class="grey-text text-center"></p></h3>
+			</div>
+
+		</div>
+
+
+		<!-- temporary win/loss buttons -->
+		<div class="col-2 grey-text">
+			<button onclick="addwin()">win</button>
+			<button onclick="addloss()">loss</button>
+		</div>
+
+
+	
+    
+	
+
+	</div>
+	<!-- Start button -->
+
+	 <!-- images of hangman</			letters being guessed -->
+
+	 <!-- number of guesses left -->
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html>	
