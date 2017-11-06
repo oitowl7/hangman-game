@@ -17,7 +17,7 @@
 
 <body onload="displaywins(); displaylosses()"; >
 <!-- <img class="source-image" src="assets/images/background-image.png" > -->
-<audio id= "audio1" controls=controls loop">
+<audio id= "audio1" controls loop">
     <source src="assets/audio/background-music.mp3"  type="audio/mp3" re>
 </audio>
 <div class="container">
@@ -41,7 +41,7 @@
 	<!-- Instructions for playing the game -->
 	<div class="instructions row">
 		<p class="col-5 grey-text lh-200">
-			If you don't know how to play Cut-Head-Off-Man, it's quite simple. The purpose of the game is to not have Ned's head fall off. In order to do this, you have to guess the word that is being offered. If you do, congradulations! You just saved Ned. If not...well.......basically it's your fault his head fell off. Hope you can live with yourself. 
+			If you don't know how to play Cut-Head-Off-Man, it's quite simple. The purpose of the game is to not have Ned's head fall off. In order to do this, you have to guess the house that is being offered. If you do, congradulations! You just saved Ned. If not...well.......basically it's your fault his head fell off. Hope you can live with yourself. 
 			<br><br>
 			For greatest enjoyment/guilt, play with the music in the background. 
 		</p>
@@ -73,6 +73,7 @@
 			</div>
 
 		</div>
+	
 
 
 		<!-- temporary win/loss buttons -->
@@ -80,6 +81,30 @@
 			<button onclick="addwin()">win</button>
 			<button onclick="addloss()">loss</button>
 		</div>
+	</div>
+
+	<div class="game1 row">
+
+		<div class="col-4">
+			<!-- pictures of eddard -->
+			<p id="stage"></p>
+		</div>
+		<!-- letters put into work -->
+		<div class="col-4">
+			<h2><p id="game-board"></p></h2>
+		</div>
+		<div class="col-4">
+			<!-- letters guessed so far -->
+			<div class="grey-text">
+				<p id="letters-guessed"></p>
+			</div>
+			<!-- time til neds head is gonzo -->
+			<div class="grey-text">
+				<p id="remaining"></p>
+			</div>
+		</div>
+	</div>
+
 
 
 	
