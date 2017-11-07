@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="displaywins(); displaylosses()"; >
+<body onload="displaywins(); displaylosses(); blankmaker(); notblank()"; >
 <!-- <img class="source-image" src="assets/images/background-image.png" > -->
 <audio id= "audio1" controls loop">
     <source src="assets/audio/background-music.mp3"  type="audio/mp3" re>
@@ -54,11 +54,22 @@
 	<div class="pg-break">
 	<br><br><br>
 	</div>
+
+
+
+
+
+
+
+
+
+
 	<!-- win/loss record and reset-->
 	<div class="winloss row">
 		<div class="col-1">
 		</div>
 		<div class="col-3">
+			<br><br>
 			<div class="wins grey-text text-center">
 				Number of times Ned hasn't died
 			</div>
@@ -74,45 +85,66 @@
 
 		</div>
 	
-
-
-		<!-- temporary win/loss buttons -->
+		<!-- temporary buttons -->
 		<div class="col-2 grey-text">
 			<button onclick="addwin()">win</button>
 			<button onclick="addloss()">loss</button>
+			<button onclick="changePicture()">
 		</div>
-	</div>
-
-	<div class="game1 row">
 
 		<div class="col-4">
 			<!-- pictures of eddard -->
-			<p id="stage"></p>
+			<img src="assets/images/1.png" id="img-num">
+
 		</div>
-		<!-- letters put into work -->
-		<div class="col-4">
-			<h2><p id="game-board"></p></h2>
-		</div>
-		<div class="col-4">
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="game1 row">
+		<div class="col-6">
 			<!-- letters guessed so far -->
 			<div class="grey-text">
-				<p id="letters-guessed"></p>
+				<p id="letters-guessed">letters guessed</p>
 			</div>
-			<!-- time til neds head is gonzo -->
+			<!-- frames til neds head is gonzo -->
 			<div class="grey-text">
-				<p id="remaining"></p>
+				<p id="remaining">frames til head is gone</p>
 			</div>
+		</div>		
+		<!-- letters put into work -->
+		<div class="col-6 grey-text">
+			<h2><p id="game-board"></p></h2>
+			<h2><p id="game-board1"></p></h2>
 		</div>
+
 	</div>
+
 
 
 
 	
     
 	
-
+	<div class="row">
+		</div>
+		<!-- blank column -->
+		<div class="col-2">
+		</div>
+		<!-- Start button -->
+		<div class="start-button col-4">
+			<button type="button" class="btn btn-success btn-lg btn-block" onclick="newgame()">New game</button>
+		</div>
 	</div>
-	<!-- Start button -->
+		
 
 	 <!-- images of hangman</			letters being guessed -->
 

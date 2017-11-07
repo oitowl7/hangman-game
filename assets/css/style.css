@@ -37,3 +37,8 @@ body {
 	width: auto;
 	align-content: center;
 }
+
+#img-num {
+	width: 400px;
+	height: 300px;
+}
