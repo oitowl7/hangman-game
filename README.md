@@ -1,3 +1,3 @@
 # hangman-game
 
-last version pushed: 1.03
+last version pushed: 1.05
