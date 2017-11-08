@@ -89,33 +89,33 @@ function newgame() {
  document.onkeydown = function() {
  	// verify that letter hasn't been used yet
  	var x = false
- 	while (x != true) {
+ 	// while (x != false) {
  		var letter = String.fromCharCode(event.keyCode).toLowerCase();
         var lcl = letter.toLowerCase();
         var ucl = letter.toUpperCase();
-        for (var i = 0; i < used.length; i++) {
-        	var y = [];
-        	if (lcl === used[i]){
-        		y[i] = 1;
-        	}
-        	else {
-        		y[i] = 0;
-        	}
+  //       for (var i = 0; i < used.length; i++) {
+  //       	var y = [];
+  //       	if (lcl === used[i]){
+  //       		y[i] = 1;
+  //       	}
+  //       	else {
+  //       		y[i] = 0;
+  //       	}
 
-        	var z = used.join();
-        	if (z != 0) {
-        		alert("this letter has already been used...idiot");
-        	}
-        	else{
-        		x = true;
-        	}
-        }
- 	}
+  //       	var z = used.join();
+  //       	if (z != 0) {
+  //       		alert("this letter has already been used...idiot");
+  //       	}
+  //       	else{
+  //       		x = true;
+  //       	}
+  //       }
+ 	// }
         // var letter = String.fromCharCode(event.keyCode).toLowerCase();
         // var lcl = letter.toLowerCase();
         // var ucl = letter.toUpperCase();
-        used.push(letter);
-        console.log(used);
+        // used.push(letter);
+        // console.log(used);
 
 
         // while (var tester = false) {
@@ -170,43 +170,43 @@ function newgame() {
 
     	// display 1 if none incorrect
     	if (incorrect == 0) {
-    		document.getElementById("img-num").src="../assets/images/1.png"
+    		document.getElementById("img-num").src="./assets/images/1.png"
     	}
     	// display image 2 if 1 incorrect
     	else if (incorrect == 1) {
-    		document.getElementById("img-num").src="../assets/images/2.png"
+    		document.getElementById("img-num").src="./assets/images/2.png"
     	}
     	// display image 3 if 2 incorrect
     	else if (incorrect == 2) {
-    		document.getElementById("img-num").src="../assets/images/3.png"
+    		document.getElementById("img-num").src="./assets/images/3.png"
     	}
     	// display image 4 if 3 incorrect
     	else if (incorrect == 3) {
-    		document.getElementById("img-num").src="../assets/images/4.png"
+    		document.getElementById("img-num").src="./assets/images/4.png"
     	}
     	// display image 5 if 4 incorrect
     	else if (incorrect == 4) {
-    		document.getElementById("img-num").src="../assets/images/5.png"
+    		document.getElementById("img-num").src="./assets/images/5.png"
     	}
     	// display image 6 if 5 incorrect
     	else if (incorrect == 5) {
-    		document.getElementById("img-num").src="../assets/images/6.png"
+    		document.getElementById("img-num").src="./assets/images/6.png"
     	}
     	// display image 7 if 6 incorrect
     	else if (incorrect == 6) {
-    		document.getElementById("img-num").src="../assets/images/7.png"
+    		document.getElementById("img-num").src="./assets/images/7.png"
     	}
     	// display image 8 if 7 incorrect
     	else if (incorrect == 7) {
-    		document.getElementById("img-num").src="../assets/images/8.png"
+    		document.getElementById("img-num").src="./assets/images/8.png"
     	}
     	// display image 9 if 8 incorrect
     	else if (incorrect == 8) {
-    		document.getElementById("img-num").src="../assets/images/9.png"
+    		document.getElementById("img-num").src="./assets/images/9.png"
     	}
     	// display image 11 if 9 incorrect
-    	else if (incorrect == 4) {
-    		document.getElementById("img-num").src="../assets/images/11.png"
+    	else if (incorrect == 9) {
+    		document.getElementById("img-num").src="./assets/images/11.png"
     	}
 
 
@@ -215,7 +215,7 @@ function newgame() {
     	if(correct == count) {
     		alert("you won! press new game to start over");
     		wins++;
-    		document.getElementById('img-num').src='../assets/images/10.jpg'
+    		document.getElementById('img-num').src='./assets/images/10.jpg'
     	}
     	else if (incorrect == 9) {
     		alert("you've killed ned and you really should feel bad about that. Press new game to start over...but it won't be the same. You've killed the real ned.")
