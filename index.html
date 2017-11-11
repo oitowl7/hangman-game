@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="displaywins(); displaylosses(); blankmaker(); notblank()"; >
+<body onload="displaywins(); displaylosses(); blankmaker(); notblank(); newgame()"; >
 
 
 
@@ -87,70 +87,75 @@
 			<div class="losses-counter">
 				<h3><p id="loss" class="grey-text text-center"></p></h3>
 			</div>
-
+			<!-- letters guessed so far -->
+			<div class="grey-text">
+				<p id="letters-guessed1" class="text-center">Letters that you have guessed. <br></p>
+			</div>
+			<div class="letters-guessed-counter">
+				<h3><p id="letters-guessed" class="grey-text text-center"></p></h3>
+			</div>
+			<!-- frames til neds head is gonzo -->
+			<div class="grey-text">
+				<p id="remaining1" class="text-center">Number of frames until his head is removed due to your incompetence. Incompetence? Incompetance? Whatever. I'm not the one on trial here.<br></p>
+			</div>
+			<div class="remaining-counter">
+				<h3><p id="remaining" class="grey-text text-center"></p></h3>
+			</div>
+			
 		</div>
 	
 		<!-- temporary buttons -->
 		<div class="col-2 grey-text">
-			<button onclick="addwin()">win</button>
+<!-- 			<button onclick="addwin()">win</button>
 			<button onclick="addloss()">loss</button>
-			<button onclick="changePicture()">
+			<button onclick="changePicture()"> -->
 		</div>
 
 		<div class="col-4">
 			<!-- pictures of eddard -->
 			<img id="img-num" src="assets/images/1.png">
+			<!-- game board -->
+			<div class="col-6 grey-text">
+				<!-- blanks -->
+				<span class="text-nowrap"><h2><p id="game-board"></p></h2></span>
+				<!-- answer (should be hidden unless being worked on)
+				<span class="text-nowrap"><h2><p id="game-board1"></p></h2></span> -->
+			</div>
+		</div>
+
 		</div>
 <!-- 		temporary buttons to addcorrect and incorrect
 		<button onclick="addcorrect()">correct</button>
 		<button onclick="addincorrect()">incorrect</button> -->
 
-	</div>
-
-
-
-
-<!-- how do i make the alert come after the html change? -->
-
-
-
-
-
-	<div class="game1 row">
-		<div class="col-6">
-			<!-- letters guessed so far -->
-			<div class="grey-text">
-				<p id="letters-guessed">letters guessed</p>
-			</div>
-			<!-- frames til neds head is gonzo -->
-			<div class="grey-text">
-				<p id="remaining">frames til head is gone</p>
-			</div>
-		</div>		
-		<!-- letters put into work -->
-		<div class="col-6 grey-text">
-			<h2><p id="game-board"></p></h2>
-			<h2><p id="game-board1"></p></h2>
-		</div>
 
 	</div>
 
 
 
+
+
+
+<br><br>
 
 	
     
 	
 	<div class="row">
-		</div>
+		
 		<!-- blank column -->
-		<div class="col-2">
+		<div class="col-6">
+
 		</div>
 		<!-- Start button -->
-		<div class="start-button col-4">
+		<div class="start-button col-2">
 			<button type="button" class="btn btn-success btn-lg btn-block" onclick="newgame()">New game</button>
 		</div>
+		<div class="col-4">
+		</div>
 	</div>
+
+	<br><br><br>
 		
 
 	 <!-- images of hangman</			letters being guessed -->

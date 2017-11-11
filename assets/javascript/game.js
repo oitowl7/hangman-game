@@ -6,7 +6,7 @@
 // }
 var wins=0;
 var losses=0;
-var houses= ["Allyrion‎",	"Arryn‎",	"Ashford",	"Baelish",	"Baratheon","Beesbury‎",	"Belgrave‎",	"Blackfyre‎","Blackmont‎","Blacktyde‎",	"Blackwood‎",	"Blount‎",	"Bolton‎",	"Botley‎",	"Bracken‎",	"Branfield‎",	"Bulwer‎",	"Cargyll‎",	"Caron‎",	"Cassel‎",	"Casterly‎",	"Caulfield‎",	"Cerwyn‎",	"Clegane‎",	"Connington‎",	"Corbray‎",	"Crakehall‎",	"Cuy‎",	"Dalt‎",	"Darry‎",	"Dayne‎",	"Dondarrion‎",	"Dormund‎",	"Dorne",	"Durrandon‎",	"Dustin‎",	"Egen‎",	"Erenford‎",	"Estermont‎",	"Florent‎",	"Forrester‎",	"Fossoway‎",	"Frey‎",	"Glover‎",	"Greenfield‎",	"Greyjoy‎",	"Harlaw‎",	"Harroway‎",	"Hightower‎",	"Hoare‎",	"Hollard‎",	"Holt‎",	"Hornwood‎",	"Hunter‎",	"Jordayne‎",	"Justman‎",	"Karstark‎",	"Kenning‎",	"Lannister‎",	"Lefford‎",	"Lorch‎",	"Lothston‎",	"Lynderly‎",	"Mallister‎",	"Manwoody‎",	"Marbrand‎",	"Marsh‎",	"Martell‎",	"Mollen‎",	"Moore‎",	"Mooton‎",	"Mormont‎",	"Morrigen‎",	"Mudd‎",	"Oakheart‎",	"Payne‎",	"Poole‎",	"Qoherys‎",	"Qorgyle‎",	"R",	"Redwyne‎",	"Reed‎",	"Reyne‎",	"Rosby‎",	"Royce‎",	"Rykker‎",	"Ryswell‎",	"Santagar‎",	"Sarsfield‎",	"Seaworth‎",	"Selmy‎",	"Serrett‎",	"Slynt‎",	"Smallwood‎",	"Stark‎",	"Staunton‎",	"Stokeworth‎",	"Strong‎",	"Swann‎",	"Swyft‎",	"Tallhart‎",	"Targaryen‎",	"Tarly‎",	"Tarth‎",	"Thorne‎",	"Tollett‎",	"Towers‎",	"Toyne‎",	"Trant‎",	"Tully‎",	"Tyrell‎",	"Uller‎",	"Umber‎",	"Velaryon‎",	"Waynwood‎",	"Wells‎",	"Westerling‎",	"Whent‎",	"Whitehill‎",	"Wode‎",	"Wylde‎",	"Yarwyck‎"]
+var houses= ["Allyrion‎",	"Arryn‎",	"Ashford",	"Baelish",	"Baratheon","Beesbury‎",	"Belgrave‎",	"Blackfyre‎","Blackmont‎","Blacktyde‎",	"Blackwood‎",	"Blount‎",	"Bolton‎",	"Botley‎",	"Bracken‎",	"Branfield‎",	"Bulwer‎",	"Cargyll‎",	"Caron‎",	"Cassel‎",	"Casterly‎",	"Caulfield‎",	"Cerwyn‎",	"Clegane‎",	"Connington‎",	"Corbray‎",	"Crakehall‎",	"Cuy‎",	"Dalt‎",	"Darry‎",	"Dayne‎",	"Dondarrion‎",	"Dormund‎",	"Dorne",	"Durrandon‎",	"Dustin‎",	"Egen‎",	"Erenford‎",	"Estermont‎",	"Florent‎",	"Forrester‎",	"Fossoway‎",	"Frey‎",	"Glover‎",	"Greenfield‎",	"Greyjoy‎",	"Harlaw‎",	"Harroway‎",	"Hightower‎",	"Hoare‎",	"Hollard‎",	"Holt‎",	"Hornwood‎",	"Hunter‎",	"Jordayne‎",	"Justman‎",	"Karstark‎",	"Kenning‎",	"Lannister‎",	"Lefford‎",	"Lorch‎",	"Lothston‎",	"Lynderly‎",	"Mallister‎",	"Manwoody‎",	"Marbrand‎",	"Marsh‎",	"Martell‎",	"Mollen‎",	"Moore‎",	"Mooton‎",	"Mormont‎",	"Morrigen‎",	"Mudd‎",	"Oakheart‎",	"Payne‎",	"Poole‎",	"Qoherys‎",	"Qorgyle‎",	"Redwyne‎",	"Reed‎",	"Reyne‎",	"Rosby‎",	"Royce‎",	"Rykker‎",	"Ryswell‎",	"Santagar‎",	"Sarsfield‎",	"Seaworth‎",	"Selmy‎",	"Serrett‎",	"Slynt‎",	"Smallwood‎",	"Stark‎",	"Staunton‎",	"Stokeworth‎",	"Strong‎",	"Swann‎",	"Swyft‎",	"Tallhart‎",	"Targaryen‎",	"Tarly‎",	"Tarth‎",	"Thorne‎",	"Tollett‎",	"Towers‎",	"Toyne‎",	"Trant‎",	"Tully‎",	"Tyrell‎",	"Uller‎",	"Umber‎",	"Velaryon‎",	"Waynwood‎",	"Wells‎",	"Westerling‎",	"Whent‎",	"Whitehill‎",	"Wode‎",	"Wylde‎",	"Yarwyck‎"]
 var house= houses[Math.floor(Math.random() * houses.length)];
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t', 'u', 'v', 'w', 'x', 'y', 'z'];
 var answerArray = [];
@@ -16,6 +16,7 @@ var incorrect = 0;
 var check = [];
 var d = [];
 var used = [];
+var guesses = 9;
 
 
 
@@ -32,18 +33,18 @@ function displaylosses() {
 // temporary addwin and addloss buttons
 function addwin() {
 	wins = wins + 1;
-	console.log(wins);
+	// console.log(wins);
 	document.getElementById("wins").innerHTML = wins;
 }
 function addloss() {
 	losses = losses + 1;
-	console.log(losses);
+	// console.log(losses);
 	document.getElementById("loss").innerHTML = losses;
 }
 
 	
-console.log(house);
-console.log(house.length);
+// console.log(house);
+// console.log(house.length);
 
 function blankmaker() {
   for (var i = 0; i < house.length - 1; i++) {
@@ -59,64 +60,38 @@ function blankmaker() {
 
 function notblank() {
  
-  document.getElementById("game-board1").innerHTML = house;
+  // document.getElementById("game-board1").innerHTML = house;
 }
 
 function newgame() {
+    answerArray = 0;
 	answerArray = [];
 	house = houses[Math.floor(Math.random() * houses.length)];
 	blankmaker();
 	notblank();
-	console.log(house);
 	correct = 0;
 	incorrect = 0;
 	count = house.length - 1;
+    used = 0;
 	used = [];
 	document.getElementById("img-num").src="./assets/images/1.png";
+    document.getElementById("letters-guessed").innerHTML = "_";
+    guesses = 9;
+    document.getElementById("remaining").innerHTML = guesses;
 
 }
-
-// var wins=0;
-// var losses=0;
-// var houses= ["Allyrion‎",	"Arryn‎",	"Ashford",	"Baelish",	"Baratheon","Beesbury‎",	"Belgrave‎",	"Blackfyre‎","Blackmont‎","Blacktyde‎",	"Blackwood‎",	"Blount‎",	"Bolton‎",	"Botley‎",	"Bracken‎",	"Branfield‎",	"Bulwer‎",	"Cargyll‎",	"Caron‎",	"Cassel‎",	"Casterly‎",	"Caulfield‎",	"Cerwyn‎",	"Clegane‎",	"Connington‎",	"Corbray‎",	"Crakehall‎",	"Cuy‎",	"Dalt‎",	"Darry‎",	"Dayne‎",	"Dondarrion‎",	"Dormund‎",	"Dorne",	"Durrandon‎",	"Dustin‎",	"Egen‎",	"Erenford‎",	"Estermont‎",	"Florent‎",	"Forrester‎",	"Fossoway‎",	"Frey‎",	"Glover‎",	"Greenfield‎",	"Greyjoy‎",	"Harlaw‎",	"Harroway‎",	"Hightower‎",	"Hoare‎",	"Hollard‎",	"Holt‎",	"Hornwood‎",	"Hunter‎",	"Jordayne‎",	"Justman‎",	"Karstark‎",	"Kenning‎",	"Lannister‎",	"Lefford‎",	"Lorch‎",	"Lothston‎",	"Lynderly‎",	"Mallister‎",	"Manwoody‎",	"Marbrand‎",	"Marsh‎",	"Martell‎",	"Mollen‎",	"Moore‎",	"Mooton‎",	"Mormont‎",	"Morrigen‎",	"Mudd‎",	"Oakheart‎",	"Payne‎",	"Poole‎",	"Qoherys‎",	"Qorgyle‎",	"R",	"Redwyne‎",	"Reed‎",	"Reyne‎",	"Rosby‎",	"Royce‎",	"Rykker‎",	"Ryswell‎",	"Santagar‎",	"Sarsfield‎",	"Seaworth‎",	"Selmy‎",	"Serrett‎",	"Slynt‎",	"Smallwood‎",	"Stark‎",	"Staunton‎",	"Stokeworth‎",	"Strong‎",	"Swann‎",	"Swyft‎",	"Tallhart‎",	"Targaryen‎",	"Tarly‎",	"Tarth‎",	"Thorne‎",	"Tollett‎",	"Towers‎",	"Toyne‎",	"Trant‎",	"Tully‎",	"Tyrell‎",	"Uller‎",	"Umber‎",	"Velaryon‎",	"Waynwood‎",	"Wells‎",	"Westerling‎",	"Whent‎",	"Whitehill‎",	"Wode‎",	"Wylde‎",	"Yarwyck‎"]
-// var house= houses[Math.floor(Math.random() * houses.length)];
-// var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's','t', 'u', 'v', 'w', 'x', 'y', 'z'];
-// var answerArray = [];
-// var count = house.length - 1;
-// var correct = 0;
 
 
 // main things that happen 
  document.onkeydown = function() {
- // 	// verify that letter hasn't been used yet
- // 	var x = false
- // 	// while (x != false) {
+ // 	
+        console.log(used);
  		var letter = String.fromCharCode(event.keyCode).toLowerCase();
         var lcl = letter.toLowerCase();
         var ucl = letter.toUpperCase();
-        // for (var i = 0; i < used.length; i++) {
-        // 	var yy = [];
-        // 	var zz = 0
-        // 	if (lcl === used[i]){
-        // 		yy[i] = 1;
-        // 	}
-        // 	else {
-        // 		yy[i] = 0;
-        // 	}
+  
 
-        // 	zz = yy.join();
-        // 	if (zz != 0) {
-        // 		alert("this letter has already been used...idiot");
-        // 		return;
-        // 	}
-        	
-        // }
- 	
-        // var letter = String.fromCharCode(event.keyCode).toLowerCase();
-        // var lcl = letter.toLowerCase();
-        // var ucl = letter.toUpperCase();
-
-        
+        // verify that letter hasn't been used yet
     	if (alphabet.indexOf(lcl) == -1) {
     		alert("use a letter.....moron");
     		return;
@@ -131,12 +106,9 @@ function newgame() {
 
 
         used.push(letter);
-        console.log(used);
 
 
-        // while (var tester = false) {
-        // 	if 
-        // }
+
 
         // checking if letter is in the house array
     	for (var i = 0; i < house.length - 1; i++){
@@ -162,25 +134,25 @@ function newgame() {
     		
     	}
 
-    		console.log(check.join(), correct, incorrect, lcl, used)
     	// checks to see if the value was in the string or not
     	var c = check.join();
     	for (var i = 0; i < house.length - 1; i++) {
    			d[i] = 0;
+            check = [];
    		}
 
     	if (c != d) {
     		// correct++;
-    		console.log("correct: " + correct);
     		check = [];
     	}
     	else{
     		incorrect++;
-    		console.log("incorrect: " + incorrect);
     		check = [];
+            guesses--;
+            
     	}
 
-
+        
 
 
 
@@ -226,17 +198,21 @@ function newgame() {
     	}
 
 
-
+        //display letters guessed and letters remaining;
+        document.getElementById("letters-guessed").innerHTML = used;
+        document.getElementById("remaining").innerHTML = guesses;
 
     	if(correct == count) {
     		alert("you won! press new game to start over");
     		wins++;
-    		document.getElementById('img-num').src='./assets/images/10.jpg'
+    		document.getElementById('img-num').src='./assets/images/10.jpg';
+            document.getElementById("wins").innerHTML = wins;
     	}
     	else if (incorrect == 9) {
     		document.getElementById("img-num").src="./assets/images/11.png"
     		setTimeout(alert("you've killed ned and you really should feel bad about that. Press new game to start over...but it won't be the same. You've killed the real ned."), 100);
     		losses++;
+            document.getElementById("loss").innerHTML = losses;
     	}
         
 
