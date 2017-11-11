@@ -71,7 +71,8 @@ function newgame() {
 	correct = 0;
 	incorrect = 0;
 	count = house.length - 1;
-	used = []
+	used = [];
+	document.getElementById("img-num").src="./assets/images/1.png";
 
 }
 
@@ -87,35 +88,50 @@ function newgame() {
 
 // main things that happen 
  document.onkeydown = function() {
- 	// verify that letter hasn't been used yet
- 	var x = false
- 	// while (x != false) {
+ // 	// verify that letter hasn't been used yet
+ // 	var x = false
+ // 	// while (x != false) {
  		var letter = String.fromCharCode(event.keyCode).toLowerCase();
         var lcl = letter.toLowerCase();
         var ucl = letter.toUpperCase();
-  //       for (var i = 0; i < used.length; i++) {
-  //       	var y = [];
-  //       	if (lcl === used[i]){
-  //       		y[i] = 1;
-  //       	}
-  //       	else {
-  //       		y[i] = 0;
-  //       	}
+        // for (var i = 0; i < used.length; i++) {
+        // 	var yy = [];
+        // 	var zz = 0
+        // 	if (lcl === used[i]){
+        // 		yy[i] = 1;
+        // 	}
+        // 	else {
+        // 		yy[i] = 0;
+        // 	}
 
-  //       	var z = used.join();
-  //       	if (z != 0) {
-  //       		alert("this letter has already been used...idiot");
-  //       	}
-  //       	else{
-  //       		x = true;
-  //       	}
-  //       }
- 	// }
+        // 	zz = yy.join();
+        // 	if (zz != 0) {
+        // 		alert("this letter has already been used...idiot");
+        // 		return;
+        // 	}
+        	
+        // }
+ 	
         // var letter = String.fromCharCode(event.keyCode).toLowerCase();
         // var lcl = letter.toLowerCase();
         // var ucl = letter.toUpperCase();
-        // used.push(letter);
-        // console.log(used);
+
+        
+    	if (alphabet.indexOf(lcl) == -1) {
+    		alert("use a letter.....moron");
+    		return;
+    	}
+
+        if(used.indexOf(lcl) !== -1) {
+        	alert("this letter has already been used....moron");
+        	return;
+        }
+
+
+
+
+        used.push(letter);
+        console.log(used);
 
 
         // while (var tester = false) {
@@ -146,7 +162,7 @@ function newgame() {
     		
     	}
 
-
+    		console.log(check.join(), correct, incorrect, lcl, used)
     	// checks to see if the value was in the string or not
     	var c = check.join();
     	for (var i = 0; i < house.length - 1; i++) {
@@ -218,7 +234,9 @@ function newgame() {
     		document.getElementById('img-num').src='./assets/images/10.jpg'
     	}
     	else if (incorrect == 9) {
-    		alert("you've killed ned and you really should feel bad about that. Press new game to start over...but it won't be the same. You've killed the real ned.")
+    		document.getElementById("img-num").src="./assets/images/11.png"
+    		setTimeout(alert("you've killed ned and you really should feel bad about that. Press new game to start over...but it won't be the same. You've killed the real ned."), 100);
+    		losses++;
     	}
         
 
