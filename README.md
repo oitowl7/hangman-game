@@ -3,6 +3,8 @@
 
 This little game is basically hangman. There is an array of House Names inside the game and one is randomly selected and you, the user, must try to guess what it is before you run out of guesses.
 
+[Link to Gitpages](https://oitowl7.github.io/hangman-game/)
+
 ### Technologies Used
 This project used vanilla JavaScript, CSS, and HTML only. This was my first foray into the world of JavaScript and logic and I only messup up almost everything. The other stuff was only slightly messed up.
 
