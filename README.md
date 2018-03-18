@@ -17,3 +17,10 @@ Finally, I learned I am **not** an artist. If you visit the page, you will see w
 
 ### Issues
 I had a lot of issues with array scoping and resetting. Obviously I had to do a lot of array "resetting to nothing" in this little game due to the fact that all my variables were global. This led to issues with arrays having no actual values being stored but still several indexes being used and messing with the `array.length`. This caused a lot of bugginess that I never fully solved before having to move on to the next task.
+
+### Images of the Page
+This is the top page with the rules and description and poorly shown text. Black or dark grey...what was I thinking?
+![Top of Page](https://imgur.com/84axmqI)
+
+This is an image of the game. Like I said, not an artist. 
+![Game](https://imgur.com/0jeKT1J)
