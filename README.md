@@ -20,7 +20,7 @@ I had a lot of issues with array scoping and resetting. Obviously I had to do a 
 
 ### Images of the Page
 This is the top page with the rules and description and poorly shown text. Black or dark grey...what was I thinking?
-![Top of Page](https://imgur.com/84axmqI)
+![Top of Page](https://i.imgur.com/84axmqI.jpg)
 
 This is an image of the game. Like I said, not an artist. 
-![Game](https://imgur.com/0jeKT1J)
+![Game](https://i.imgur.com/0jeKT1J.jpg)
