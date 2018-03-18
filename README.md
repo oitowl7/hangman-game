@@ -27,6 +27,7 @@ This is the top page with the rules and description and poorly shown text. Black
 ![Top of Page](https://i.imgur.com/84axmqI.jpg)
 
 
+
 This is an image of the game. Like I said, not an artist. 
 
 ![Game](https://i.imgur.com/0jeKT1J.jpg)
