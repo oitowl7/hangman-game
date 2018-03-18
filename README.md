@@ -1,4 +1,5 @@
 # Hangman/Chopman Game
+### *HOMEWORK ASSIGNMENT #3*
 ## Save Ned...or Don't
 
 This little game is basically hangman. There is an array of House Names inside the game and one is randomly selected and you, the user, must try to guess what it is before you run out of guesses.
