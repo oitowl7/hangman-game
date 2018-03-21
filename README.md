@@ -1,5 +1,5 @@
 # Hangman/Chopman Game
-### *HOMEWORK ASSIGNMENT #3* **Save Ned...or Don't**
+### *HOMEWORK ASSIGNMENT #3:* **Save Ned...or Don't**
 
 
 [Link to Gitpages](https://oitowl7.github.io/hangman-game/)
